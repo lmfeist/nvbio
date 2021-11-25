@@ -4,6 +4,7 @@ cmake_minimum_required(VERSION 2.8)
 #set(CMAKE_CXX_STANDARD 03)
 #set(CMAKE_CXX_STANDARD_REQUIRED ON)
 #set(CMAKE_CXX_FLAGS "-std=c++11") something may error caused by nvcc
+add_compile_definitions(THRUST_IGNORE_CUB_VERSION_CHECK)
 
 # available options
 option(CUDA_VERBOSE_PTXAS
